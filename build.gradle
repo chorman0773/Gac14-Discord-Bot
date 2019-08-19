@@ -1,0 +1,26 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group = "github.chorman0773.gac14"
+archivesBaseName = "gac14-discord"
+version = "1.0"
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	jcenter()
+	maven {
+    	url "https://libraries.minecraft.net"
+	}
+}
+
+subprojects {
+    apply plugin: 'java'
+}
+
+dependencies {
+	compile project(":PkmCom-APL")
+	compile 'com.mojang:brigadier:1.0.17'
+	compile 'net.dv8tion:JDA:4.0.0'
+}
