@@ -1,0 +1,5 @@
+/bin/
+
+# Files Clobbered by Gradle
+/.project
+/.classpath
